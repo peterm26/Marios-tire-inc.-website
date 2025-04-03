@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mario's Tire Inc.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <img src="images/corner-image-2.png" alt="Mario's Tires Logo" class="logo-img" />
+      <div class="logo-text">Mario's Tires Inc.</div>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/">About</a>
+      <a href="/">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="column-left">
+        <h1>New & Used Tires</h1>
+        <p>Get a quote today from Pompano's most trusted tire experts!</p>
+        <button onclick="window.location.href='tel:+19547859042'">Call Now</button>
+
+        <!-- 📍 Contact info under button -->
+        <div class="contact-hero">
+          <p>📞 (954) 785-9042</p>
+          <p>📍 1080 S Dixie Hwy E #2e, Pompano Beach, FL 33060</p>
+          <p>Open Mon–Sat · 8:30am–6:30pm</p>
+        </div>
+      </div>
+      <div class="column-right">
+        <img src="images/background.png" alt="Tire background" class="hero-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="photo-gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/1.jpeg" class="gallery-img" alt="Tire service 1" />
+      <img src="images/2.jpeg" class="gallery-img" alt="Tire service 2" />
+      <img src="images/3.jpeg" class="gallery-img" alt="Tire service 3" />
+      <img src="images/4.jpeg" class="gallery-img" alt="Tire service 4" />
+      <img src="images/5.jpeg" class="gallery-img" alt="Tire service 5" />
+      <img src="images/6.jpeg" class="gallery-img" alt="Tire service 6" />
+      <img src="images/7.jpeg" class="gallery-img" alt="Tire service 7" />
+      <img src="images/8.jpeg" class="gallery-img" alt="Tire service 8" />
+      <img src="images/9.jpeg" class="gallery-img" alt="Tire service 9" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Mario’s Tires Inc. | 📞 (954) 785-9042</p>
+    <p>📍 1080 S Dixie Hwy E #2e, Pompano Beach, FL 33060</p>
+    <p>Open Mon–Sat · 8:30am–6:30pm</p>
+  </footer>
+
+  <!-- ScrollReveal Animations -->
+  <script>
+    ScrollReveal().reveal('.column-left', {
+      delay: 200,
+      distance: '50px',
+      origin: 'left',
+      duration: 1000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.column-right', {
+      delay: 400,
+      distance: '50px',
+      origin: 'right',
+      duration: 1000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.hero-image', {
+      delay: 600,
+      scale: 0.85,
+      duration: 1200,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.gallery-img', {
+      interval: 200,
+      distance: '40px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 1000,
+      reset: true
+    });
+  </script>
+</body>
+</html>
+
