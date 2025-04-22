@@ -9,55 +9,78 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- navigatiion -->
   <nav>
     <div class="nav-left">
-      <img src="images/corner-image-2.png" alt="Mario's Tires Logo" class="logo-img" />
+      <img src="images/corner_logo.png" alt="Mario's Tires Logo" class="logo-img" />
       <div class="logo-text">Mario's Tires Inc.</div>
     </div>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/">About</a>
-      <a href="/">Contact</a>
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact_us.html">Contact Us</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- hero -->
+  <section id="home" class="hero">
     <div class="hero-container">
       <div class="column-left">
         <h1>New & Used Tires</h1>
         <p>Get a quote today from Pompano's most trusted tire experts!</p>
-        <button onclick="window.location.href='tel:+19547859042'">Call Now</button>
-
-        <!-- 📍 Contact info under button -->
+        <a href="tel:+19547859042" class="call-button">Call Now</a>
+        
+        <!-- contact -->
         <div class="contact-hero">
           <p>📞 (954) 785-9042</p>
           <p>📍 1080 S Dixie Hwy E #2e, Pompano Beach, FL 33060</p>
-          <p>Open Mon–Sat · 8:30am–6:30pm</p>
+          <p>⏰ Open Mon–Sat · 8:30am–6:30pm</p>
         </div>
       </div>
       <div class="column-right">
-        <img src="images/background.png" alt="Tire background" class="hero-image" />
+        <img src="images/squareFrontPic.JPEG" alt="Tire background" class="hero-image" />
       </div>
     </div>
   </section>
 
-  <!-- Photo Gallery -->
+  <!-- grouped photos -->
   <section class="photo-gallery">
     <h2>Our Work</h2>
     <div class="gallery-grid">
-      <img src="images/1.jpeg" class="gallery-img" alt="Tire service 1" />
+      <img src="images/1replacement.JPEG" class="gallery-img" alt="Tire service 1" />
       <img src="images/2.jpeg" class="gallery-img" alt="Tire service 2" />
-      <img src="images/3.jpeg" class="gallery-img" alt="Tire service 3" />
-      <img src="images/4.jpeg" class="gallery-img" alt="Tire service 4" />
-      <img src="images/5.jpeg" class="gallery-img" alt="Tire service 5" />
+      <img src="images/3replacement.JPEG" class="gallery-img" alt="Tire service 3" />
+      <img src="images/4replacement.HEIC" class="gallery-img" alt="Tire service 4" />
+      <img src="images/5replacement.HEIC" class="gallery-img" alt="Tire service 5" />
       <img src="images/6.jpeg" class="gallery-img" alt="Tire service 6" />
       <img src="images/7.jpeg" class="gallery-img" alt="Tire service 7" />
-      <img src="images/8.jpeg" class="gallery-img" alt="Tire service 8" />
+      <img src="images/8replacement.JPEG" class="gallery-img" alt="Tire service 8" />
       <img src="images/9.jpeg" class="gallery-img" alt="Tire service 9" />
     </div>
   </section>
+
+  <!-- Brands Section -->
+  <section class="brands-section">
+    <h2>Brands We Carry</h2>
+    <img src="images/brands.png" alt="Tire brands we carry" class="brands-image" />
+  </section>
+
+    <!-- Services Section -->
+<section class="services-section">
+  <h2>Our Services</h2>
+  <ul class="services-grid">
+    <li>Brakes</li>
+    <li>Rotors</li>
+    <li>New & Used Tire Installations</li>
+    <li>Balance</li>
+    <li>We Sell Rims</li>
+    <li>Sensor Installations</li>
+    <li>Flat Repairs</li>
+    <li>Valve Stems</li>
+    <li>And More!</li>
+  </ul>
+</section>
+
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -66,7 +89,9 @@
     <p>Open Mon–Sat · 8:30am–6:30pm</p>
   </footer>
 
-  <!-- ScrollReveal Animations -->
+
+
+  <!-- ✅ ScrollReveal Animation Code -->
   <script>
     ScrollReveal().reveal('.column-left', {
       delay: 200,
@@ -99,7 +124,24 @@
       duration: 1000,
       reset: true
     });
+
+    ScrollReveal().reveal('.brands-image', {
+      delay: 300,
+      distance: '40px',
+      origin: 'bottom',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.services-grid li', {
+  interval: 100,
+  distance: '30px',
+  origin: 'bottom',
+  opacity: 0,
+  duration: 800,
+  reset: true
+});
+
   </script>
 </body>
 </html>
-
