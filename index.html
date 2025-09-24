@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mario's Tire Inc.</title>
+  <meta name="description" content="Mario's Tires Inc. - Your trusted tire experts in Pompano Beach, FL. New & used tires, brakes, rotors, and more. Family-owned business with fair prices and honest service." />
+  <meta name="keywords" content="tires, Pompano Beach, Florida, new tires, used tires, brakes, rotors, tire installation, family business" />
+  <meta name="author" content="Mario's Tires Inc." />
+  <meta property="og:title" content="Mario's Tires Inc. - Pompano Beach Tire Experts" />
+  <meta property="og:description" content="Get quality tires and automotive services from Pompano's most trusted family-owned tire shop. Fair prices, honest service." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mariostiresinc.com" />
+  <meta property="og:image" content="images/corner_logo.png" />
+  <title>Mario's Tires Inc. - New & Used Tires | Pompano Beach, FL</title>
+  <link rel="icon" type="image/png" href="images/corner_logo.png" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
-  <!-- navigatiion -->
+  <!-- navigation -->
   <nav>
     <div class="nav-left">
-      <img src="images/corner image.png" alt="Mario's Tires Logo" class="logo-img" />
+      <img src="images/corner_logo.png" alt="Mario's Tires Logo" class="logo-img" />
       <div class="logo-text">Mario's Tires Inc.</div>
     </div>
     <div class="nav-links">
@@ -30,11 +39,11 @@
         <p>Get a quote today from Pompano's most trusted tire experts!</p>
         <a href="tel:+19547859042" class="call-button">Call Now</a>
         
-        <!-- contact -->
+        <!-- contact info -->
         <div class="contact-hero">
           <p>📞 (954) 785-9042</p>
           <p>📍 1080 S Dixie Hwy E #2e, Pompano Beach, FL 33060</p>
-          <p>Open Mon–Sat · 8:30am–6:30pm</p>
+          <p>⏰ Open Mon–Sat · 8:30am–6:30pm</p>
         </div>
       </div>
       <div class="column-right">
@@ -43,7 +52,7 @@
     </div>
   </section>
 
-  <!-- grouped photos -->
+  <!-- photo gallery -->
   <section class="photo-gallery">
     <h2>Our Work</h2>
     <div class="gallery-grid">
@@ -63,6 +72,22 @@
   <section class="brands-section">
     <h2>Brands We Carry</h2>
     <img src="images/brands.png" alt="Tire brands we carry" class="brands-image" />
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <ul class="services-grid">
+      <li>Brakes</li>
+      <li>Rotors</li>
+      <li>New & Used Tire Installations</li>
+      <li>Balance</li>
+      <li>We Sell Rims</li>
+      <li>Sensor Installations</li>
+      <li>Flat Repairs</li>
+      <li>Valve Stems</li>
+      <li>And More!</li>
+    </ul>
   </section>
 
   <!-- Footer -->
@@ -111,6 +136,15 @@
       distance: '40px',
       origin: 'bottom',
       duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.services-grid li', {
+      interval: 100,
+      distance: '30px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 800,
       reset: true
     });
   </script>
